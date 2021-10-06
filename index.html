@@ -4,108 +4,106 @@
 	<meta charset="utf-8">
 	<title></title>
 	<style type="text/css">body{
-	background: #00FFFF;
+	background:#00FFFF;
 }
+
 .info{
 	border: solid;
-	height: 600px;
-	width: 700px;
+	height: 610px;
+	width: 1200px;
 	position: absolute;
-	left:  400px;
-	top: 80px;
+	left:  40px;
+	top: 40px;
+
 
 }
-.info2{
-border-radius: 30px;
-	height: 560px;
-	width: 700px;
+.cerrar{
+	width:200px;
+	height: 100;
 	position: absolute;
-	left:  400px;
-	top: -100px;
-	display: none;
+	background: greenyellow;
+	border-radius: 50px;
+	top: 300px;
+	left: 150px;
+	border: solid 2px black;
+	box-sizing: border-box;
+	padding-top: 20px;
+	font-size: 40px;
+	background-size: cover;
+	padding-left:  20px;
+	transition: all 4s;
+
 }
-.info3{
-border-radius: 30px;
-	height: 500px;
+.infos{
+border: solid ;
+	height: 380px;
 	width: 600px;
 	position: absolute;
-	left:  450px;
-	top: -0px;
+	left:  400px;
+	top: 60px;
+	background: 	cyan;
 	display: none;
 }
-
-
-
-.boton1{
-	background: #00FFFF;
-	border : solid 10px;
-	height: 100px;
-	width: 300px;
-	position: absolute;
-	left:  5px;
-	top: 200px;
-	box-sizing: border-box;
-}
-.boton2{
-
-background: #00FFFF;
-	border : solid 10px;
-	height: 100px;
-	width: 300px;
-	position: absolute;
-	left:  10px;
-	top: 80px;
-	box-sizing: border-box;
-
-}
-
-
-.boton1:active .info2 {
-    background:red;
-	display: block;
-	color: black;
-}
-
-.boton2:active .info3{
+.tema1{
 	background: red;
-	display: block;
-	color:  black;
+	border-radius: 10px;
+	height: 100px;
+	width: 200px;
+	position: absolute;
+	left:  150px;
+	font-size:50px;
+	padding-left: 20px;
+	padding-top: 20px;
+	top: 100px;
+	box-sizing: border-box;
 }
+.tema2{
 
+background: red;
+	border-radius: 10px;
+	height: 100px;
+	width: 200px;
+	position: absolute;
+	left:  900px;
+	font-size:50px;
+	padding-left: 20px;
+	padding-top: 20px;
+	top: 500px;
+	box-sizing: border-box;
 
+}
+.sonido{
+background: red;
+	border-radius: 10px;
+	height: 100px;
+	width: 220px;
+	position: absolute;
+	left:  1010px;
+	font-size:50px;
+	padding-left: 20px;
+	padding-top: 20px;
+	top: 100px;
+	box-sizing: border-box;	
+}
 </style>
 
 </head>
 <body>
-	<font size="50px"><center>ultimo trabajo</center></font>
-<div class="info"></div>
-<center><font size="60px"><div class="boton1"> lamborghini
-	<div class="info2">lamborghini<br><img src="Na.png">
-
-
-
-
-		
-
-	<font size="5px">	
-		Ferruccio Lamborghini nació el 28 de abril de 1916 en la pequeña ciudad de Cento, en la provincia de Ferrara. Fue un rico fabricante de tractores, máquinas de aire acondicionado y sistemas de unidades calentadoras. Según cierta historia, Lamborghini habría fundado su empresa de autos debido a una disputa con Enzo Ferrari
-	</font>
-</div>
-</div></font></center>
 
 
 
 
 <div class="info"></div>
-<center><font size="20px"><div class="boton2"> bugatti
-	<div class="info3"><img src="Maincra.jpg">
-	<font size="5px">bugatti<br>
-	
-
-Bugatti es una marca de automóviles francesa de gran lujo y competición fundada en el año 1909 por Ettore Bugatti (1881-1947) en Molsheim, localidad actualmente en Francia y por entonces perteneciente al Imperio alemán. En la actualidad es propiedad del Grupo Volkswagen.</font>
-
+<div class="tema1" onclick="document.getElementById('info2').style.display='block'">Tema 1</div>
+<div class="infos" id="info2">
+<div class="cerrar"onclick="document.getElementById('info2').style.display='none'" >rolls-royce</div><font size="6px">Historia de Rolls-Royce. Rolls-Royce Limited nació en mayo de 1904 cuando Henry Royce y Charles Rolls se conocen. Henry Royce había fundado una fábrica de equipos eléctricos y mecánicos y en 1904 presentó su primer automóvil. ... Finalmente en 1906 llega el 30 CV, primer automóvil desarrollado conjuntamente</font>
 </div>
-</div></font></center>
+<div class="tema2" onclick="document.getElementById('info2').style.display='block'" >TEMA 2</div>
+<video src="dia.mp3" id="hol"></video>
+<div class="sonido" onclick="getElementById('hol').play()">SONIDO</div>
+</body>
+</html>
+
 
 
 </body>
