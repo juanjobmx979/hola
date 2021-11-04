@@ -9,8 +9,8 @@
 
 .info{
 	border: solid;
-	height: 610px;
-	width: 1200px;
+	height: 800px;
+	width: 2000px;
 	position: absolute;
 	left:  40px;
 	top: 40px;
@@ -36,35 +36,35 @@
 }
 .infos{
 border: solid ;
-	height: 380px;
+	height: 700px;
 	width: 600px;
 	position: absolute;
-	left:  400px;
-	top: 60px;
+	left:  1300px;
+	top: 100px;
 	background: 	cyan;
 	display: none;
 }
 .tema1{
 	background: red;
-	border-radius: 10px;
+	border-radius: 50px;
 	height: 100px;
 	width: 200px;
 	position: absolute;
-	left:  150px;
+	left:  1000px;
 	font-size:50px;
 	padding-left: 20px;
 	padding-top: 20px;
-	top: 100px;
+	top: 250px;
 	box-sizing: border-box;
 }
 .tema2{
 
 background: red;
-	border-radius: 10px;
+	border-radius: 50px;
 	height: 100px;
 	width: 200px;
 	position: absolute;
-	left:  900px;
+	left:  1000px;
 	font-size:50px;
 	padding-left: 20px;
 	padding-top: 20px;
@@ -72,19 +72,7 @@ background: red;
 	box-sizing: border-box;
 
 }
-.sonido{
-background: red;
-	border-radius: 10px;
-	height: 100px;
-	width: 220px;
-	position: absolute;
-	left:  1010px;
-	font-size:50px;
-	padding-left: 20px;
-	padding-top: 20px;
-	top: 100px;
-	box-sizing: border-box;	
-}
+
 </style>
 
 </head>
@@ -94,13 +82,12 @@ background: red;
 
 
 <div class="info"></div>
-<div class="tema1" onclick="document.getElementById('info2').style.display='block'">Tema 1</div>
+<div class="tema1" onclick="document.getElementById('info2').style.display='block'">prueba</div>
 <div class="infos" id="info2">
-<div class="cerrar"onclick="document.getElementById('info2').style.display='none'" >rolls-royce</div><font size="6px">Historia de Rolls-Royce. Rolls-Royce Limited nació en mayo de 1904 cuando Henry Royce y Charles Rolls se conocen. Henry Royce había fundado una fábrica de equipos eléctricos y mecánicos y en 1904 presentó su primer automóvil. ... Finalmente en 1906 llega el 30 CV, primer automóvil desarrollado conjuntamente</font>
+<div class="cerrar"onclick="document.getElementById('info2').style.display='none'" ></div><font size="6px"></font>
 </div>
-<div class="tema2" onclick="document.getElementById('info2').style.display='block'" >TEMA 2</div>
-<video src="dia.mp3" id="hol"></video>
-<div class="sonido" onclick="getElementById('hol').play()">SONIDO</div>
+<div class="tema2" onclick="document.getElementById('info2').style.display='block'">ejecutar</div>
+<img src="captura.pnj">
 </body>
 </html>
 
